@@ -31,7 +31,7 @@ The scan completed successfully and identified **21 total issues**. No 'Critical
 * **Info:** 20 *(Inferred from total)*
 
 *(Screenshot of the scan results dashboard)*
-![Scan Summary Dashboard](Scan%20Result%20Dashboard.png)
+![Scan Summary Dashboard](Scan%20Result%20Dashbord.png)
 
 ### 4. Key Finding (Medium Severity)
 The scan's most significant finding was one 'Medium' severity vulnerability.
