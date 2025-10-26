@@ -14,7 +14,7 @@ The scan was configured using the "Basic Network Scan" template in Nessus.
 * **Authentication:** The scan was unauthenticated.
 
 *(Screenshot of the scan configuration)*
-`![Scan Configuration](Screenshot 2025-10-26 234545.png)`
+![Scan Configuration](Configuration.png)
 
 ### 3. Scan Summary
 The scan completed successfully and identified **21 total issues**. No 'Critical' or 'High' severity vulnerabilities were found.
@@ -26,28 +26,29 @@ The scan completed successfully and identified **21 total issues**. No 'Critical
 **Vulnerability Breakdown:**
 * **Critical:** 0
 * **High:** 0
-* [cite_start]**Medium:** 1 [cite: 17]
-* [cite_start]**Low:** 0 [cite: 18]
+* **Medium:** 1 
+* **Low:** 0 
 * **Info:** 20 *(Inferred from total)*
 
 *(Screenshot of the scan results dashboard)*
-`![Scan Summary Dashboard](Screenshot 2025-10-26 235507.png)`
+![Scan Summary Dashboard](Scan%20Result%20Dashboard.png)
 
 ### 4. Key Finding (Medium Severity)
 The scan's most significant finding was one 'Medium' severity vulnerability.
 
-* [cite_start]**Vulnerability:** SSL Certificate Cannot Be Trusted [cite: 31]
+* **Vulnerability:** SSL Certificate Cannot Be Trusted 
 * **Severity:** **Medium**
-* [cite_start]**CVSS v3.0 Score:** 6.5 [cite: 30]
+* **CVSS v3.0 Score:** 6.5 
 * **Description:** The service is using an SSL certificate that is not trusted. This can be because it is self-signed, expired, or signed by an unknown authority. This prevents verification of the server's identity and could allow a man-in-the-middle attack.
 * **Solution:** Purchase or generate a proper, trusted SSL certificate for this service.
 
 *(Screenshot of the detailed vulnerability)*
-`![Vulnerability Details](Screenshot 2025-10-26 235544.png)`
+![Vulnerability Details](Major%20Vulnerability%20Found.png)
 
 ### 5. Task Deliverables
 All required deliverables are contained within this repository:
 
-1.  **Full Scan Report (PDF):** `My Basic Network Scan_fy9uqz.pdf`
-2.  **Scan Result Screenshots:** All `.png` files documenting the process and findings.
-3.  **README.md File:** This summary report.
+1. **Full Scan Report (PDF):** ![Scan Report](Scan%20Report.pdf)
+
+### 6. Key Learnings from the Task
+This assignment helped gain a real world experience in the analysis of vulnerability report. The scan result presented was 0 Critical and 0 High vulnerabilities which reflected the well-maintained and hardened system. The first and most notable finding was a Medium severity issue, "SSL Certificate Cannot Be Trusted" that is the frequent and low-risk finding of local services that use self-signed certificates. The scan would also give comprehensive "Informational" information, showing how scanners are carried out to find out how services and operating systems are located and execute before revealing any weakness.
